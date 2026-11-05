@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kervan Lojistik — Kara, deniz ve hava taşımacılığı</title>
+  <meta name="description" content="Kervan Lojistik; 1998'den bu yana karayolu, denizyolu, havayolu taşımacılığı, depolama ve gümrük hizmetleri sunar." />
+  <meta name="theme-color" content="#0e1318" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#hizmetler">İçeriğe geç</a>
+
+  <!-- ÜST BAR -->
+  <header class="header" id="header">
+    <div class="wrap header__inner">
+      <a href="#top" class="logo" aria-label="Kervan Lojistik ana sayfa">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="7" />
+          <rect x="10" y="12.5" width="20" height="7" class="logo__accent" />
+          <rect x="2" y="21" width="20" height="7" />
+        </svg>
+        <span class="logo__word">KERVAN<small>LOJİSTİK</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Ana menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#ag">Ağımız</a>
+        <a href="#surec">Çalışma şekli</a>
+        <a href="#kurumsal">Kurumsal</a>
+        <a href="#iletisim">İletişim</a>
+        <a href="#takip" class="nav__track">Gönderi takibi</a>
+      </nav>
+      <div class="header__cta">
+        <a href="#teklif" class="btn btn--signal btn--sm">Teklif isteyin</a>
+        <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="scene" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow eyebrow--light"><span class="live-dot"></span>Kara · Deniz · Hava · Depolama</p>
+        <h1 class="hero__title" data-split="hero">Ağır yükler,<br />net takvimler.</h1>
+        <p class="hero__lead" data-hero-fade>1998'den bu yana Mersin ve İstanbul'daki operasyon merkezlerimizden sanayicilerin ihracat ve ithalat yükünü kapıdan kapıya taşıyoruz. Tek muhatap, tek takvim, tek fatura.</p>
+        <div class="hero__actions" data-hero-fade>
+          <a class="btn btn--signal" href="#teklif">Teklif isteyin
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </a>
+          <a class="btn btn--ghost" href="#takip">Gönderinizi takip edin</a>
+        </div>
+      </div>
+      <div class="wrap hero__strip" data-hero-fade>
+        <div><span class="k">Saha</span><span class="v">Mersin Limanı · 36.80°N 34.63°E</span></div>
+        <div><span class="k">Yerel saat</span><span class="v" id="clock">--:--:--</span></div>
+        <div><span class="k">Şu an yolda</span><span class="v"><span id="live">1.284</span> gönderi</span></div>
+        <div><span class="k">Ort. sapma · son 30 gün</span><span class="v">3,2 saat</span></div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- SEKTÖR ŞERİDİ -->
+    <div class="ticker" aria-label="Hizmet verdiğimiz sektörler">
+      <div class="ticker__track">
+        <span>Otomotiv yan sanayi</span><span>Beyaz eşya</span><span>Hazır giyim &amp; tekstil</span><span>Gıda &amp; soğuk zincir</span><span>Kimya (ADR)</span><span>Makine &amp; proje yükü</span><span>Yapı malzemeleri</span><span>Perakende</span>
+        <span aria-hidden="true">Otomotiv yan sanayi</span><span aria-hidden="true">Beyaz eşya</span><span aria-hidden="true">Hazır giyim &amp; tekstil</span><span aria-hidden="true">Gıda &amp; soğuk zincir</span><span aria-hidden="true">Kimya (ADR)</span><span aria-hidden="true">Makine &amp; proje yükü</span><span aria-hidden="true">Yapı malzemeleri</span><span aria-hidden="true">Perakende</span>
+      </div>
+    </div>
+
+    <!-- RAKAMLAR -->
+    <section class="figures wrap" aria-label="Rakamlarla Kervan">
+      <div class="figure" data-reveal>
+        <span class="figure__num"><span data-count="27">0</span></span>
+        <span class="figure__label">yıllık saha tecrübesi</span>
+      </div>
+      <div class="figure" data-reveal>
+        <span class="figure__num"><span data-count="340">0</span></span>
+        <span class="figure__label">özmal çekici ve dorse</span>
+      </div>
+      <div class="figure" data-reveal>
+        <span class="figure__num"><span data-count="42">0</span></span>
+        <span class="figure__label">ülkeye düzenli sefer</span>
+      </div>
+      <div class="figure" data-reveal>
+        <span class="figure__num">%<span data-count="98.6" data-decimals="1">0</span></span>
+        <span class="figure__label">zamanında teslim oranı (2025)</span>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section class="section services" id="hizmetler">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">01 — Hizmetler</p>
+          <h2 class="section__title" data-split>Yükün cinsine göre<br />doğru taşıma modu.</h2>
+          <p class="section__intro" data-reveal>Her gönderiyi önce masada planlıyoruz: maliyet, süre ve risk dengesine göre karayolu, deniz, hava ya da bunların bir kombinasyonu.</p>
+        </div>
+
+        <ol class="svc-list">
+          <li class="svc" data-reveal>
+            <span class="svc__no">01</span>
+            <h3 class="svc__title">Karayolu taşımacılığı</h3>
+            <p class="svc__desc">Avrupa, Balkanlar, Kafkasya ve Orta Doğu'ya komple (FTL) ve parsiyel (LTL) yükleme. GPS ve ısı sensörlü araçlarla 7/24 izleme.</p>
+            <ul class="svc__tags"><li>FTL</li><li>Parsiyel</li><li>Frigorifik</li><li>ADR</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+          <li class="svc" data-reveal>
+            <span class="svc__no">02</span>
+            <h3 class="svc__title">Denizyolu</h3>
+            <p class="svc__desc">Mersin, Ambarlı ve İzmir çıkışlı FCL / LCL konteyner hizmeti. Navlun pazarlığından liman operasyonuna kadar tek elden yönetim.</p>
+            <ul class="svc__tags"><li>FCL</li><li>LCL</li><li>Ro-Ro</li><li>Konşimento</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+          <li class="svc" data-reveal>
+            <span class="svc__no">03</span>
+            <h3 class="svc__title">Hava kargo</h3>
+            <p class="svc__desc">Acil yedek parça ve yüksek değerli yükler için İstanbul Havalimanı çıkışlı konsolide ve charter çözümler.</p>
+            <ul class="svc__tags"><li>Konsolidasyon</li><li>Charter</li><li>Kapıdan kapıya</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+          <li class="svc" data-reveal>
+            <span class="svc__no">04</span>
+            <h3 class="svc__title">Depolama &amp; dağıtım</h3>
+            <p class="svc__desc">Gebze'de 24.000 m² gümrüklü ve serbest antrepo. Stok yönetimi, elleçleme, etiketleme ve Türkiye geneli bölgesel dağıtım.</p>
+            <ul class="svc__tags"><li>Antrepo</li><li>WMS</li><li>Cross-dock</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+          <li class="svc" data-reveal>
+            <span class="svc__no">05</span>
+            <h3 class="svc__title">Gümrük müşavirliği</h3>
+            <p class="svc__desc">Yetkilendirilmiş Yükümlü (YYS) statüsüyle hızlı hat. İhracat, ithalat, transit ve dahilde işleme rejimi işlemleri.</p>
+            <ul class="svc__tags"><li>YYS</li><li>T1 / T2</li><li>DİR</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+          <li class="svc" data-reveal>
+            <span class="svc__no">06</span>
+            <h3 class="svc__title">Proje taşımacılığı</h3>
+            <p class="svc__desc">Gabari dışı ve ağır tonajlı yükler için güzergâh etüdü, izin süreçleri, eskort ve vinç planlaması.</p>
+            <ul class="svc__tags"><li>Lowbed</li><li>Gabari dışı</li><li>Eskort</li></ul>
+            <svg class="svc__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- AĞ / HARİTA -->
+    <section class="section network" id="ag">
+      <div class="wrap network__grid">
+        <div class="network__copy">
+          <p class="eyebrow eyebrow--light">02 — Ağımız</p>
+          <h2 class="section__title" data-split>İki liman, üç kıta,<br />haftada 160 sefer.</h2>
+          <p class="section__intro" data-reveal>Ana koridorlarımızda kendi filomuz, diğer hatlarda yıllardır birlikte çalıştığımız iş ortaklarımız var. Hepsi aynı takip ekranında.</p>
+          <dl class="corridors">
+            <div data-reveal><dt>Türkiye – Batı Avrupa</dt><dd><span>4–6 gün</span><span>38 sefer / hafta</span></dd></div>
+            <div data-reveal><dt>Türkiye – Orta Avrupa</dt><dd><span>3–4 gün</span><span>52 sefer / hafta</span></dd></div>
+            <div data-reveal><dt>Mersin – Körfez</dt><dd><span>9–12 gün</span><span>deniz + kara</span></dd></div>
+            <div data-reveal><dt>Kafkasya &amp; Irak</dt><dd><span>3–5 gün</span><span>29 sefer / hafta</span></dd></div>
+          </dl>
+        </div>
+        <figure class="map" aria-label="Kervan Lojistik taşıma ağı şeması">
+          <svg id="network" viewBox="0 0 1000 600" role="img" aria-labelledby="mapTitle">
+            <title id="mapTitle">İstanbul ve Mersin merkezli Avrupa, Kafkasya ve Orta Doğu bağlantıları</title>
+            <defs>
+              <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.1" />
+              </pattern>
+            </defs>
+            <rect class="map__bg" width="1000" height="600" fill="url(#dots)" />
+            <g id="routes"></g>
+            <g id="hubs"></g>
+          </svg>
+          <figcaption class="map__legend">
+            <span><i class="lg lg--road"></i>Karayolu</span>
+            <span><i class="lg lg--sea"></i>Denizyolu / Ro-Ro</span>
+            <span><i class="lg lg--hub"></i>Operasyon merkezi</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SÜREÇ -->
+    <section class="section process" id="surec">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">03 — Çalışma şekli</p>
+            <h2 class="section__title" data-split>Sürpriz yok,<br />sadece plan var.</h2>
+          </div>
+          <p class="section__intro" data-reveal>Talebinizi aldığımız andan teslim belgesine kadar her adımın bir sahibi ve bir saati var.</p>
+        </div>
+        <div class="process__bar" aria-hidden="true"><span></span></div>
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__time">T + 2 saat</span>
+            <h3>Teklif</h3>
+            <p>Yük bilgisi, güzergâh ve tarih aralığına göre net fiyat. Gizli kalem yok, geçerlilik süresi yazılı.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__time">T + 1 gün</span>
+            <h3>Planlama</h3>
+            <p>Araç, ekipman ve evrak listesi çıkarılır. Size atanan operasyon sorumlusu sizi arar.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__time">Yükleme günü</span>
+            <h3>Taşıma</h3>
+            <p>Yükleme fotoğrafları, mühür numarası ve canlı konum paylaşılır. Sınır geçişleri anlık bildirilir.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__time">Teslim + 24 saat</span>
+            <h3>Kapanış</h3>
+            <p>İmzalı CMR, gümrük beyannamesi ve fatura tek dosyada. Aylık performans raporu e-postanızda.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TAKİP -->
+    <section class="section track" id="takip">
+      <div class="wrap track__grid">
+        <div>
+          <p class="eyebrow">04 — Gönderi takibi</p>
+          <h2 class="section__title" data-split>Yükünüz şu an nerede?</h2>
+          <p class="section__intro" data-reveal>Takip numaranız sevk irsaliyenizde ve onay e-postanızda yer alır. Deneme için <button type="button" class="link-btn" id="sample">KRV-48213</button> numarasını kullanabilirsiniz.</p>
+        </div>
+        <div class="track__panel" data-reveal>
+          <form class="track__form" id="trackForm" novalidate>
+            <label for="trackNo" class="sr-only">Takip numarası</label>
+            <input id="trackNo" name="trackNo" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="KRV-00000" />
+            <button class="btn btn--dark" type="submit">Sorgula</button>
+          </form>
+          <p class="track__error" id="trackError" role="alert"></p>
+          <div class="track__result" id="trackResult" aria-live="polite" hidden>
+            <div class="track__route">
+              <div><span class="k">Çıkış</span><strong>Bursa, TR</strong></div>
+              <div class="track__line"><span></span></div>
+              <div><span class="k">Varış</span><strong>Münih, DE</strong></div>
+            </div>
+            <ol class="track__events">
+              <li class="done"><time>03 Kas · 09:40</time><span>Yükleme tamamlandı, mühür no. 4471902</span></li>
+              <li class="done"><time>03 Kas · 18:15</time><span>Bursa gümrük çıkış işlemi tamamlandı</span></li>
+              <li class="done"><time>04 Kas · 22:05</time><span>Kapıkule sınır kapısından çıkış yapıldı</span></li>
+              <li class="now"><time>05 Kas · 11:30</time><span>Macaristan, Szeged yakınında yolda</span></li>
+              <li><time>07 Kas · tahmini</time><span>Alıcıya teslim</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KURUMSAL -->
+    <section class="section about" id="kurumsal">
+      <div class="wrap about__grid">
+        <div class="about__copy">
+          <p class="eyebrow">05 — Kurumsal</p>
+          <h2 class="section__title" data-split>Üç kamyonla başladık.<br />Alışkanlıklarımız aynı.</h2>
+          <p data-reveal>Kervan, 1998'de Mersin'de üç çekiciyle kuruldu. Bugün 610 çalışanı, kendi filosu ve antreposuyla Türkiye'nin orta ölçekli lojistik firmaları arasında yer alıyor. Değişmeyen şey şu: telefonu açan kişi yükünüzü biliyor.</p>
+          <p data-reveal>Müşterilerimizin %71'i bizimle beş yıldan uzun süredir çalışıyor. Büyümemizi reklamdan çok bu sayıya borçluyuz.</p>
+          <blockquote class="quote" data-reveal>
+            <p>“Üç yılda bir kez bile hattın durduğunu hatırlamıyorum. Sorun çıktığında bizden önce onlar arıyor.”</p>
+            <footer>Tedarik zinciri müdürü · Otomotiv yan sanayi, Bursa</footer>
+          </blockquote>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Kuruluş</dt><dd>1998, Mersin</dd></div>
+          <div><dt>Genel merkez</dt><dd>Tuzla, İstanbul</dd></div>
+          <div><dt>Çalışan</dt><dd>610</dd></div>
+          <div><dt>Özmal filo</dt><dd>212 çekici · 128 dorse</dd></div>
+          <div><dt>Depolama</dt><dd>24.000 m² · Gebze</dd></div>
+          <div><dt>Filo yaş ortalaması</dt><dd>3,4 yıl · Euro 6</dd></div>
+          <div><dt>Belgeler</dt><dd class="badges"><span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span><span>YYS</span><span>ADR</span><span>TAPA FSR</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- TEKLİF / İLETİŞİM -->
+    <section class="section contact" id="teklif">
+      <div class="wrap contact__grid" id="iletisim">
+        <div class="contact__copy">
+          <p class="eyebrow eyebrow--light">06 — Teklif &amp; iletişim</p>
+          <h2 class="section__title" data-split>Yükünüzü anlatın,<br />iki saat içinde dönelim.</h2>
+          <ul class="offices">
+            <li data-reveal>
+              <h3>Genel merkez</h3>
+              <p>Aydınlı Mah. Lojistik Cad. No: 00<br />Tuzla / İstanbul</p>
+              <a href="tel:+902160000000">+90 216 000 00 00</a>
+            </li>
+            <li data-reveal>
+              <h3>Mersin liman ofisi</h3>
+              <p>Liman Yolu Cad. No: 00<br />Akdeniz / Mersin</p>
+              <a href="tel:+903240000000">+90 324 000 00 00</a>
+            </li>
+            <li data-reveal>
+              <h3>Gebze antrepo</h3>
+              <p>Organize Sanayi Bölgesi 0. Cad.<br />Gebze / Kocaeli</p>
+              <a href="mailto:operasyon@kervanlojistik.com.tr">operasyon@kervanlojistik.com.tr</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="quote-form" id="quoteForm" data-reveal novalidate>
+          <div class="field-row">
+            <label class="field"><span>Ad soyad</span><input name="ad" required autocomplete="name" /></label>
+            <label class="field"><span>Firma</span><input name="firma" autocomplete="organization" /></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>E-posta</span><input type="email" name="eposta" required autocomplete="email" /></label>
+            <label class="field"><span>Telefon</span><input type="tel" name="tel" autocomplete="tel" /></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Çıkış noktası</span><input name="cikis" placeholder="Şehir, ülke" /></label>
+            <label class="field"><span>Varış noktası</span><input name="varis" placeholder="Şehir, ülke" /></label>
+          </div>
+          <fieldset class="modes">
+            <legend>Taşıma modu</legend>
+            <label><input type="radio" name="mod" value="kara" checked /><span>Karayolu</span></label>
+            <label><input type="radio" name="mod" value="deniz" /><span>Denizyolu</span></label>
+            <label><input type="radio" name="mod" value="hava" /><span>Hava</span></label>
+            <label><input type="radio" name="mod" value="bilmiyorum" /><span>Önerin</span></label>
+          </fieldset>
+          <label class="field"><span>Yük hakkında</span><textarea name="not" rows="3" placeholder="Cins, ağırlık, palet / kap adedi, istenen tarih…"></textarea></label>
+          <div class="quote-form__foot">
+            <p class="fine">Formu göndererek <a href="#">KVKK aydınlatma metnini</a> okuduğunuzu kabul edersiniz.</p>
+            <button class="btn btn--signal" type="submit">Teklif talebini gönder
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+            </button>
+          </div>
+          <p class="quote-form__msg" id="quoteMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a href="#top" class="logo logo--light" aria-label="Kervan Lojistik">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="7" />
+          <rect x="10" y="12.5" width="20" height="7" class="logo__accent" />
+          <rect x="2" y="21" width="20" height="7" />
+        </svg>
+        <span class="logo__word">KERVAN<small>LOJİSTİK</small></span>
+      </a>
+      <nav class="footer__links" aria-label="Alt menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#ag">Ağımız</a>
+        <a href="#kurumsal">Kurumsal</a>
+        <a href="#">Kariyer</a>
+        <a href="#">KVKK</a>
+        <a href="#">Çerez politikası</a>
+      </nav>
+      <p class="footer__legal">© 2026 Kervan Lojistik A.Ş. · Ticaret Sicil No: 000000 · Mersis: 0000000000000000</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

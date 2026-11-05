@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-05T14:23:06.898Z",
+        "reason": "Claude triage: type scale lives in src/style.css (hero 50-128px, h2 38-74px, h3 22-30px, body 17px; steps well above 1.25x); hook read index.html without the external stylesheet"
+      }
+    ]
+  }
+}
